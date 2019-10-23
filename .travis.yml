@@ -11,6 +11,9 @@ branches:
   only:
   - master
 
+before_install:
+  - printenv > .env
+
 install:
   - yarn install
   - yarn generate:gh-pages
